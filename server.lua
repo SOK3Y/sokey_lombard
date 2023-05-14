@@ -8,5 +8,5 @@ AddEventHandler('sokey:sellphone', function(odebrane)
     xPlayer.removeInventoryItem(item, 1)
     xPlayer.addMoney(siano)
 else
-    ESX.ShowNotification("Nie masz przedmiotu")
+    TriggerClientEvent('esx:showNotification', source, "Nie masz przedmiotu")
 end)
