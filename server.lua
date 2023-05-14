@@ -6,7 +6,7 @@ AddEventHandler('sokey:sellphone', function()
     local item = phone
 
     xPlayer.removeInventoryItem(item, 1)
-    xPlayer.addMoney(siano)
+    xPlayer.addInventoryItem(money, siano)
     TriggerClientEvent('esx:showNotification', source, "Sprzedałeś "..item.." za "..siano)
 else
     TriggerClientEvent('esx:showNotification', source, "Nie masz przedmiotu")
