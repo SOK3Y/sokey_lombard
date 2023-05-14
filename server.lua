@@ -1,5 +1,5 @@
 RegisterServerEvent('sokey:sellphone')
-AddEventHandler('sokey:sellphone', function(odebrane)
+AddEventHandler('sokey:sellphone', function()
     local xPlayer = ESX.GetPlayerFromId(source)
     local _source = source
     local siano = math.random(200,500)
